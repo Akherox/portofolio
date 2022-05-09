@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+
+.controle .setas {
+    margin: -33px 0 0;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.prev {
+    left: 30px;
+}
+
+.prev:hover .svg {
+    left: -10px;
+}
+
+.next {
+    right: 30px;
+}
+
+.next:hover .svg {
+    left: 10px;
+}
+
+
+.svg {
+    position: relative;
+    left: 0;
+    width: 14px;
+    height: 26px;
+    fill: #8A8A8A;
+    transition: left 0.2s ease;
+}

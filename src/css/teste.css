@@ -1,0 +1,40 @@
+body {
+    font: 14px/2 "Open sans", sans-serif;
+    letter-spacing: 0.05em;
+    background-color: #373737;
+}
+
+.controle .setas {
+    margin: -33px 0 0;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.prev {
+    left: 30px;
+}
+
+.prev:hover .svg {
+    left: -10px;
+}
+
+.next {
+    right: 30px;
+}
+
+.next:hover .svg {
+    left: 10px;
+}
+
+
+.svg {
+    position: relative;
+    left: 0;
+    width: 14px;
+    height: 26px;
+    fill: #009419;
+    transition: left 0.2s ease;
+}

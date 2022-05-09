@@ -26,7 +26,7 @@ Portofolio de projetos pessoais criado baixo a instrução e prientação da Tot
 
 ### Links
 
-- Codigo na web URL: [GitHub](https://github.com/Akherox/front-mentor-01)
+- Codigo na web URL: [GitHub](https://github.com/Akherox/portofolio)
 - Site ao vivo URL: [GitHub Pages](https://akherox.github.io/portofolio/)
 
 ## Meu processo
