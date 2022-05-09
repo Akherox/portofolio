@@ -21,7 +21,7 @@
                     <span></span>
                     <span></span>
                     <ul class="burgerMenu">
-                        <a href="/src/pages/index.html">
+                        <a href="/index.html">
                             <li>Sobre</li>
                         </a>
                         <a href="/src/pages/portofolio.html">
@@ -48,21 +48,16 @@
                         bryanalexbm@gmail.com
                         e vamos conversar.</p>
                 </div>
-                <form class="formContato">
-                    <p>
-                        <label>Nome: <input type="text"></label>
-                    </p>
-                    <p>
-                        <label for="in-email">E-mail:</label>
-                        <input id="in-email" type="email" required>
-                    </p>
-                    <p>
-                        <button>ENVIAR</button>
-                    </p>
-                    <p>
-                        <label>Mensagem</label>
-                        <textarea name="contato" id="mensagem" cols="30" rows="10"></textarea>
-                    </p>
+                <form class="fContato">
+                    <div class="metade izquerda fContato">
+                            <input type="text" id="in-nome" placeholder="Digite seu nome" />
+                            <input type="email" id="in-email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="metade direita fContato">
+                        <textarea name="contato" type="text" id="in-mensagem" placeholder="Mensagem" ></textarea>
+                        <!-- cols="40" rows="15"  -->
+                    </div>
+                        <button type="submit" id="in-enviar">Enviar</button>
                 </form>
                 <div class="controle">
                     <div class="setas prev">

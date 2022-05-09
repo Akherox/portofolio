@@ -8,28 +8,17 @@
     <link rel="stylesheet" href="/src/css/teste.css">
 </head>
 <body>
-    <main class="main-content">
-        <section class="slideshow">
-          <div class="slideshow-inner">
-            
-            
-            <div class="controle">
-              <div class="setas prev">
-                <a href="/pages/index.html">
-                <span class="svg">
-                  <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="46px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
-                  
-                </span></a>
-              </div>
-              <div class="setas next">
-                <a href="/pages/habilidades.html">
-                <span class="svg">
-                  <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="46px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
-                </span></a>
-              </div>
-            </div>
-          </div> 
-        </section>
-      </main>
+  <h1>Elegant Contact Form</h1>
+  <form class="cf">
+    <div class="half left cf">
+      <input type="text" id="input-name" placeholder="Name">
+      <input type="email" id="input-email" placeholder="Email address">
+      <input type="text" id="input-subject" placeholder="Subject">
+    </div>
+    <div class="half right cf">
+      <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+    </div>  
+    <input type="submit" value="Submit" id="input-submit">
+  </form>
 </body>
 </html>
