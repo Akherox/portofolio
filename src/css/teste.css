@@ -1,99 +1,57 @@
-@import "compass/css3";
-
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-html,
 body {
-    background: #f1f1f1;
-    font-family: 'Merriweather', sans-serif;
-    padding: 1em;
+    background: #D0D8DB;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
-h1 {
-    text-align: center;
-    color: #a8a8a8;
-    text-shadow: 1px 1px 0 rgba(white, 1);
-}
-
-form {
-    max-width: 600px;
-    text-align: center;
-    margin: 20px auto;
-}
-
-form input,
 textarea {
-    border: 0;
-    outline: 0;
-    padding: 1em;
-    border-radius: 8px;
-    display: block;
-    width: 100%;
-    margin-top: 1em;
-    font-family: 'Merriweather', sans-serif;
-    box-shadow: 0 1px 1px rgba(black, 0.1);
     resize: none;
 }
 
-form input,
-textarea:focus {
-    box-shadow: 0 0px 2px rgba(red, 1) !important;
-}
-
-#input-submit {
-    color: white;
-    background: red;
-    cursor: pointer;
-}
-
-#input-submit:hover {
-    box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
-}
-
-form textarea {
-    height: 126px;
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 
-.half {
-    float: left;
-    width: 48%;
-    margin-bottom: 1em;
+.svg-inline--fa {
+  vertical-align: -0.200em;
 }
 
-.right {
-    width: 50%;
+.circular-botao-social {
+  text-align: center;
 }
 
-.left {
-    margin-right: 2%;
+.circular-botao-social .social-botao {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.circular-botao-social .social-botao:hover, .circular-botao-social .social-botao:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 
-@media (max-width: 480px) {
-    .half {
-        width: 100%;
-        float: none;
-        margin-bottom: 0;
-    }
-}
-
-
-/* Clearfix */
-.cf:before,
-.cf:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}

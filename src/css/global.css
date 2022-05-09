@@ -79,3 +79,52 @@ textarea {
 .fContato .izquerda {
     margin-left: 0%;
 }
+
+/* BOTÕES - REDES SOCIAIS */
+.circular-botao-social {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+textarea {
+    resize: none;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+.circular-botao-social {
+  text-align: center;
+}
+.circular-botao-social .social-botao {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.circular-botao-social .social-botao:hover, .circular-botao-social .social-botao:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
