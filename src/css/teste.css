@@ -1,57 +1,34 @@
 body {
-    background: #D0D8DB;
-    padding-top: 60px;
-    padding-bottom: 40px;
+  background-color: darkgray;
 }
 
-textarea {
-    resize: none;
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  padding: 10px;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  white-space: nowrap;
+.grid-item {
+  padding: 20px;
+  text-align: left;
 }
 
-
-.svg-inline--fa {
-  vertical-align: -0.200em;
-}
-
-.circular-botao-social {
+.cont-icons {
   text-align: center;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto;
 }
 
-.circular-botao-social .social-botao {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
+.icon {
   width: 3.125rem;
   height: 3.125rem;
-  border: 0.125rem transparent;
+  border: 0.125rem solid transparent;
   padding: 0;
   text-decoration: none;
   text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
+  background-color: #fefefe;
+  border-radius: 5px;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
 }
-
-.circular-botao-social .social-botao:hover, .circular-botao-social .social-botao:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-
