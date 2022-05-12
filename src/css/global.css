@@ -32,17 +32,19 @@ h3 {
 }
 
 button {
+  text-transform: uppercase;
   font-size: 15px;
   width: 294px;
   height: 40px;
-  background-color: #2A1ED5;
+  background-color: #0f35df;
   font-weight: 600;
   border: none;
-  border-radius: 4px;
-  box-shadow: 0px 5px 5px #00000070, inset 0px -12px 8px -10px rgb(0, 2, 100);
-  transition: all 0.5s;
+  border-radius: 5px;
+  box-shadow: 0px 9px 1px -4px #00000070, inset 0px -12px 0.5px -8px rgb(0, 21, 138);
+  transition: all 0.1s;
   margin-top: 3em;
   color: white;
+  padding-bottom: 7px;
 }
 button:active {
   transform: scale(0.90);
@@ -50,6 +52,10 @@ button:active {
 button a {
   text-decoration: none;
   color: white;
+}
+button:hover {
+  transform: rotate(0deg) skew(0deg) scale(.9);
+  box-shadow: inset 0px -12px 0.5px -8px rgb(0, 21, 138);
 }
 
 
