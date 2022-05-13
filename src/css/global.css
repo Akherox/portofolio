@@ -15,20 +15,25 @@ body {
 main {
   width: 700px;
   margin: 0 auto;
+  height: 80vh;
+  display: flex;
 }
 
 main .conteudo {
   text-align: center;
+  margin: auto;
 }
 
 h1 {
   color: #CACACA;
+  margin-top: 0px;
 }
 
 h3 {
   color: #CACACA;
   font-size: 20px;
   margin-bottom: -10px;
+  margin-top: 0px;
 }
 
 button {
@@ -62,19 +67,52 @@ button:hover {
 /* --------- RODAPE ---------- */
 .rodape {
   text-align: center;
+  margin-top: -20px;
 }
-
+.rodape p {
+  margin-bottom: 0px;
+}
 .contato-email {
   font-weight: bold;
   color: #8A8A8A;
 }
 
 
+/* ---------- SOBRE ----------*/
+/* Vou fazer depois */
+
+
+/* ---------- PORTIFOLIO ----------*/
+.container-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  height: 200px;
+  /*width: 100vw;
+  heigth: auto;
+  display: flex;
+  justify-content: space-between;
+  aling-itens: center;
+  flex-wrap: wrap;
+  gap: 50px;*/
+  gap: 50px;
+}
+.projetos:hover {
+  margin: 0;
+  filter: drop-shadow(1.4);
+  
+}
+.projetos img {
+  height: 100%;
+  box-shadow: 9px 9px 2px #242424;
+  border: 0px;
+}
+
 /* ---------- HABILIDADES ---------- */
 .grid-container {
   display: grid;
   grid-template-columns: 50% auto;
-  padding: 10px;
+  margin: auto;
 }
 
 .grid-item {
@@ -131,8 +169,7 @@ textarea {
 
 /* ---------- BOTÕES - REDES SOCIAIS ---------- */
 .circular-botao-social {
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 15px;
 }
 
 textarea {
@@ -164,18 +201,14 @@ textarea {
   cursor: pointer;
   width: 3.125rem;
   height: 3.125rem;
-  border: 0.125rem transparent;
   padding: 0;
   text-decoration: none;
   text-align: center;
   color: #fefefe;
   font-size: 1.5625rem;
   font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
   transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-right: 20px;
 }
 
 .circular-botao-social .social-botao:hover,
