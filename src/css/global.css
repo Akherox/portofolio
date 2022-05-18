@@ -10,6 +10,8 @@ body {  margin: 0;  padding: 0;  font-family: Lato, Helvetica, Arial, sans-serif
 
 main {  width: 700px;  margin: 0 auto; }
 
+nav {  width: 0 0;}
+
 main .conteudo {  text-align: center;  margin: auto; } 
 
 h1 {  font-weight: 700; font-size: 29px; line-height: 49px; color: #CACACA;  margin-top: 0px; }

@@ -11,24 +11,20 @@
         width: 100px;
         height: 100px;
     } */
-    .controle {
-        content: none;
-    }
   }
   
   @media (max-width: 767px){
   
-    main {
-        max-width: 50%;
+    main{
+        padding: 0 5px;
+        justify-content: start;
+        text-align: center;
     }
     t1 {
-        font-size: 20px;
+        font-size: 22px;
     }
-    .rodape {
-        padding: 5px;
-    }
-    .controle:disabled {
-        content: none;
+    section .controle {
+        display: none;
     }
   }
   
@@ -36,19 +32,12 @@
     
     main {
         text-align: center;
-        justify-content: center;
-        display: flex;
-        margin: auto;
     }
     h1 {
-        font-size: 15px;
+        font-size: 19px;
     }
-
-    .rodape {
-        padding: 5px;
-    }
-    .controle:disabled {
-        content: 0;
+    section .controle {
+        display: none;
     }
   }
 
