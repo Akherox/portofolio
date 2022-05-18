@@ -1,29 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/src/css/teste.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop Mais</title>
+
+    <link rel="stylesheet" href="/src/css/teste.css">
 </head>
-
 <body>
-  <footer>
-    <section class="grid-container">
-      <div class="grid-item">
-          <ul>
-              <li>Análise de projeto</li>
-              <li>Gerenciar e liderar equipe</li>
-              <li>Acompanhar, gerenciar e testar projetos</li>
-              <li>Escolher tecnologias a serem usadas nos projetos</li>
-              <li>Atendimento ao cliente</li>
-          </ul>
-      </div>
-      <button type="submit" id="in-enviar">Enviar</button>
-    </section>
-  </footer>
-</body>
+    <section class="pagina">
+        <header class="topo">
+            <div class="container">
+                <!-- h1.logo>a[href=index.html]>{Bike Shop Mais} -->
+                <h1 class="logo"><a href="img/BIKESHOP MAIS_LOGO.svg">Bike Shop Mais</a></h1>
+                <nav class="menuPrincipal">
+                    <ul class="lista-horizontal">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="oficina.html">Oficina</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>        
+        </header>
+        <main class="conteudo">
+            <section class="banner">
+                <div class="container">
+                  <h1>Olá! Sou Bryan Bravo</h1>
+                  <p>Sou um Desenvolvedor Junior e atualmente estou procurando uma oportunidade de me avalacar com uma
+                      empressa de sucesso na area da Tecnologia de Informação. Estou estudando Desenvolvimento Full
+                      Stack e tenho a experiencia pratica necessaria para começar a desenvolver sites web ou apps</p>
+                  <button><a href="/src/pages/portofolio.html">IR PARA O PORTOFOLIO</a></button>
+                </div>
+            </section>
+            <section class="destaques">
+                <div class="container">
+                    <!-- ul>li>a[href=#]>img[src]>a3 -->
+                    <ul class="lista-horizontal ">
+                        <li>
+                            <a href="#">
+                                <img src="img/sobre.jpg" alt="Sobre a bike shop"></img>
+                                    <h3>Sobre a bike shop</h3>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/conheca.jpg" alt="Conheça nossa oficina"></img>
+                                    <h3>Conheça nossa oficina</h3> 
+                            </a>
+                        </li>
 
+                        <li>
+                            <a href="#">
+                                <img src="img/revisao.jpg" alt="Agende uma revisão"></img>
+                                    <h3>Agende uma revisão</h3>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <div class="container">
+                <p>2021 - SENAC - todos os direitos reservados</p>
+                <!-- ul.social>li*3>a[href=#]>{texto} -->
+                <ul class="social lista-horizontal">
+                    <li class="facebook"><a href="img/facebook.svg">Facebook</a></li>
+                    <li class="instagram"><a href="img/instagram.svg">Instagram</a></li>
+                    <li class="twitter"><a href="img/twitter.svg">Twitter</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    
+</body>
 </html>
