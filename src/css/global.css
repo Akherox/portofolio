@@ -4,6 +4,10 @@
 
 /* ---------- FORMATAÇÂO GERAL ---------- */
 body {
+  /* background-image: linear-gradient(to right, #3c3d3f, #2d4e68);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  /*ESSE FORMATO É PARA APROVEITAR O "GRADIENT" (DEGRADADO) DAS CORES*/
   margin: 0;
   padding: 0;
   font-family: Lato, Helvetica, Arial, sans-serif;
@@ -13,15 +17,18 @@ body {
 }
 
 main {
-  width: 700px;
+  max-width: 100vh;
   margin: 0 auto;
-  height: 80vh;
-  display: flex;
+  max-height: 100%;
 }
 
 main .conteudo {
   text-align: center;
   margin: auto;
+}
+
+nav {
+  margin: 0;
 }
 
 h1 {
@@ -68,9 +75,11 @@ button:hover {
 .rodape {
   text-align: center;
   margin-top: -20px;
-}
-.rodape p {
-  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  margin-bottom: 20px;
+
 }
 .contato-email {
   font-weight: bold;
@@ -83,30 +92,7 @@ button:hover {
 
 
 /* ---------- PORTIFOLIO ----------*/
-.container-projetos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  height: 200px;
-  /*width: 100vw;
-  heigth: auto;
-  display: flex;
-  justify-content: space-between;
-  aling-itens: center;
-  flex-wrap: wrap;
-  gap: 50px;*/
-  gap: 50px;
-}
-.projetos:hover {
-  margin: 0;
-  filter: drop-shadow(1.4);
-  
-}
-.projetos img {
-  height: 100%;
-  box-shadow: 9px 9px 2px #242424;
-  border: 0px;
-}
+
 
 /* ---------- HABILIDADES ---------- */
 .grid-container {
