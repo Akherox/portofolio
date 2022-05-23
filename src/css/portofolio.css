@@ -39,7 +39,7 @@ a {
   top: 0;
   font-size: 10px;
   font-weight: 700;
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
 }
 
 .card .wrapper {
@@ -47,6 +47,7 @@ a {
   min-height: 460px;
   position: relative;
   overflow: hidden;
+  border-radius: 8px; 
   /* box-shadow: 0 19px 38px rgba(#000, 0.3), 0 18px 15px rgba(#000, 0.4); */
   box-shadow: 0 0 22px rgba(0, 0, 0, .6);
 }
@@ -83,8 +84,10 @@ a {
 }
 
 .text {
-  height: 70px;
-  margin: 0;
+  font-size: 15px;
+  /* margin: 0; */
+  position: relative;
+  display: inline-block;
 }
 
 
@@ -99,8 +102,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #8A8A8A;
-  color: #CACACA;
+  background-color: #0f35df;
+  color: #ffffff;
   padding: 0.8em;
 }
 
@@ -126,7 +129,11 @@ a {
 .example-1 .content {
   background-color: #fff;
   box-shadow: 0 5px 30px 10px rgba(#000, 0.3);
-  font-size: 100%;
+  /* font-size: 100%; */
+}
+.example-1 p {
+  color: #000;
+  display: inline-block;
 }
 
 .example-1 .title {
@@ -231,8 +238,8 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #8A8A8A;
-    color: #CACACA;
+    background-color: #0f35df;
+    color: #ffffff;
     padding: 0.8em;
   }
   
@@ -260,6 +267,11 @@ a {
     box-shadow: 0 5px 30px 10px rgba(#000, 0.3);
     font-size: 100%;
   }
+
+  .example-3 p {
+    color: #000;
+    display: inline-block;
+  }
   
   .example-3 .title {
     color: lighten(#000, 50%);
@@ -275,7 +287,71 @@ a {
     position: relative;
   }
   
+/* // Second example styles ///////////////////////////////////////////////////////////////////////////////*/
+.example-4 .wrapper {
+  background: url("/src/imagens/MarvelPVP1.jpg") center / cover no-repeat;
+}
 
+.example-4 .wrapper:hover .menu-content span {
+  transform: translate(-50%, -10px);
+  opacity: 1;
+}
+
+.example-4 .header {
+  color: #fff;
+  padding: 1em;
+}
+
+.example-4 .header .date {
+  float: left;
+  font-size: 12px;
+  color: #fff;
+}/* ESTUDAR SE VAI FICAR OU NAO*/
+
+.example-4 .menu-content {
+  float: right;
+}/* ESTUDAR SE VAI FICAR OU NAO*/
+
+.example-4 .menu-content li {
+  margin: 0 5px;
+  position: relative;
+}/* ESTUDAR SE VAI FICAR OU NAO*/
+
+.example-4 .menu-content span {
+  transition: all 0.3s;
+  opacity: 0;
+}/* ESTUDAR SE VAI FICAR OU NAO*/
+
+.example-4 .data {
+  color: #fff;
+  transform: translateY(calc(70px + 4em));
+}
+
+.example-4 .title {
+  color: #fff;
+}
+
+.example-4 .title a {
+  color: #fff;
+}
+
+.example-4 .content > a  {
+  /* display: block;
+  width: 100px;
+  margin: 2em auto 1em;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+  position: relative;
+  font-weight: 700; */
+    display: block;
+    width: 100px;
+    margin: 2em auto 1em;
+    font-size: 12px;
+    position: relative;
+  
+}
 
   /*---------- BOTAO TOP -----------------------------------------------------------------------------------*/
    .botaoTop{
