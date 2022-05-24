@@ -229,7 +229,6 @@ a {
 /* // Therd example styles ///////////////////////////////////////////////////////////////////////////////*/
 .example-3 .wrapper {
     background: url("/src/imagens/Pokedex.png") 20% 1% / cover no-repeat;
-    --opacidad-negro: 0.5;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/imagens/Pokedex.png");
     /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/src/imagens/Pokedex.jpg"); */
   }
@@ -265,7 +264,7 @@ a {
   .example-3 .content {
     background-color: #fff;
     box-shadow: 0 5px 30px 10px rgba(#000, 0.3);
-    font-size: 100%;
+    /* font-size: 100%; */
   }
 
   .example-3 p {
@@ -290,6 +289,7 @@ a {
 /* // Second example styles ///////////////////////////////////////////////////////////////////////////////*/
 .example-4 .wrapper {
   background: url("/src/imagens/MarvelPVP1.jpg") center / cover no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/imagens/MarvelPVP1.jpg");
 }
 
 .example-4 .wrapper:hover .menu-content span {

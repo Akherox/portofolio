@@ -1,231 +1,62 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+/** GERAL **/
+* { box-sizing: border-box; }
 
-* {
-  box-sizing: border-box;
-}
+body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-body {
-  background-color: #2F2F2F;
-  /* background-image: linear-gradient(to right, #2F2F2F, #a6aaad);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh; */
-  font-family: 'Open Sans',
-    sans-serif;
-}
+a:hover { filter: brightness(1.4); }
 
-a {
-  text-decoration: none;
-}
+.container { width: 990px; margin: 0 auto; }
 
-h1 {
-  font-family: 'Open Sans',
-    sans-serif;
-  font-weight: 300;
-}
+.lista-horizontal { display: flex; padding-left: 0; }
+.lista-horizontal li { list-style: none; margin-left: 10px; }
+.lista-horizontal li:first-child { margin-left: 0; }
 
-.row {
-  max-width: 900px;
-  margin: 50px auto 0;
-}
-
-/* // Base styles */
-.card {
-  float: left;
-  padding: 0 1.7rem;
-  width: 50%;
-}
-
-.card .menu-content {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.card li {
-  display: inline-block;
-}
-
-.card a {
-  color: rgb(102, 102, 102);
-}
-
-.card span {
-  left: 50%;
-  top: 0;
-  font-size: 10px;
-  font-weight: 700;
-  font-family: 'Open Sans';
-}
-
-.card .wrapper {
-  background-color: #fff;
-  min-height: 460px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 19px 38px rgba(#000, 0.3), 0 15px 12px rgba(#000, 0.2);
-}
-
-.card .wrapper:hover {
-  transform: translateY(0);
-}
-
-.card .wrapper:hover .data {
-  transform: translateY(0);
-}
+.conteudo .titulo { background-color:  #000; padding: 20px 0; }
+.conteudo .titulo h2 { margin: 0; color: #fff; font-size: 83px; font-weight: normal; text-transform: uppercase; }
 
 
-.card .data {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  transform: translateY(calc(70px + 1em));
-  transition: transform 0.3s;
-}
-
-.card .data .content {
-  padding: 1em;
-  position: relative;
-  z-index: 1;
-}
-
-.author {
-  font-size: 12px;
-}
-
-.title {
-  margin-top: 10px;
-}
-
-.text {
-  height: 70px;
-  margin: 0;
-}
-
-input[type='checkbox'] {
-  display: none;
-}
-
-input[type='checkbox']:checked+.menu-content {
-  transform: translateY(-60px);
-}
+.conteudo-interno > .container {
+    margin-top: 50px; margin-bottom: 170px;
+    display: grid; 
+    grid-template-areas: 
+    "tx f1 f1"
+    "f2 f1 f1"
+    "f2 f3 f4"
+    "f5 f5 f4"
+    "f5 f5 f4";
+    gap: 30px ;
+ }
+.conteudo-interno-texto { grid-area: tx; }
+.conteudo-interno-f1 { grid-area: f1; }
+.conteudo-interno-f2 { grid-area: f2; }
+.conteudo-interno-f3 { grid-area: f3; }
+.conteudo-interno-f4 { grid-area: f4; }
+.conteudo-interno-f5 { grid-area: f5; }
+.produtos .container { margin-bottom: 60px; grid-template-areas: none; }
 
 
-/* // First example styles */
-.example-01 .wrapper {
-  background: url(https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80) 20% 1% / cover no-repeat;
-}
+/** TOPO **/
+.topo { background-color: #FFCC40; }
+.topo .container { display: flex; justify-content: space-between; align-items: center; }
+.topo .logo { margin: 0; }
+.topo .logo a { display: block; height: 20px; width: 205px; background: url(../img/BIKESHOP\ MAIS_LOGO.svg) center center no-repeat; font-size: 0 !important; }
+.topo nav a { text-decoration: none; color: #000; font-size: 20px; text-transform: lowercase; }
+.topo nav a:hover { color: #707070; }
 
-.example-01 .date {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #8A8A8A;
-  color: #CACACA;
-  padding: 0.8em;
-}
+/** RODAPE **/
+.rodape { background-color: #FFCC40; }
+.rodape .container { display: flex; justify-content: space-between; }
 
-.example-01 .date span {
-  display: block;
-  text-align: center;
-}
+.social a { display: block; background: url(../img/facebook.svg) center center no-repeat; width: 30px; height: 20px; font-size: 0!important; }
+.social .twitter a { background-image: url(../img/twitter.svg); }
+.social .instagram a { background-image: url(../img/instagram.svg); }
 
-.example-01 .day {
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.example-01.month {
-  text-transform: uppercase;
-}
-
-.example-01 .month,
-.example-01 .year {
-  font-size: 12px;
-}
-
-.example-01 .content {
-  background-color: #fff;
-  box-shadow: 0 5px 30px 10px rgba(#000, 0.3);
-  font-size: 80%;
-}
-
-.example-01 .title {
-  color: lighten(#000, 50%);
-}
-.example-01 .title a {
-  color: lighten(#000, 50%);
-}
-.example-01 .content > a {
-  display: block;
-  width: 100px;
-  margin: 2em auto 1em;
-  font-size: 12px;
-  position: relative;
-}
-
-/* // Second example styles */
-.example-2 .wrapper {
-  background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center / cover no-repeat;
-}
-
-.example-2 .wrapper:hover .menu-content span {
-  transform: translate(-50%, -10px);
-  opacity: 1;
-}
-
-.example-2 .header {
-  color: #fff;
-  padding: 1em;
-}
-
-.example-2 .header .date {
-  float: left;
-  font-size: 12px;
-  color: #fff;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
-
-.example-2 .menu-content {
-  float: right;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
-
-.example-2 .menu-content li {
-  margin: 0 5px;
-  position: relative;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
-
-.example-2 .menu-content span {
-  transition: all 0.3s;
-  opacity: 0;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
-
-.example-2 .data {
-  color: #fff;
-  transform: translateY(calc(70px + 4em));
-}
-
-.example-2 .title {
-  color: #fff;
-}
-
-.example-2 .title a {
-  color: #fff;
-}
-
-.example-2 .content > a  {
-  /* display: block;
-  width: 100px;
-  margin: 2em auto 1em;
-  text-align: center;
-  font-size: 12px;
-  color: #fff;
-  line-height: 1;
-  position: relative;
-  font-weight: 700; */
-    display: block;
-    width: 100px;
-    margin: 2em auto 1em;
-    font-size: 12px;
-    position: relative;
-  
-}
+/** HOME **/
+.destaques ul { justify-content: space-between; margin-top: 50px; margin-bottom: 50px; }
+.destaques ul h3 { margin-bottom: 0; }
+.destaques ul a { text-align: center; text-decoration: none; color: #000; }
+.destaques ul a:hover { color: #707070; }
+.banner { background-color: #191919; }
+.banner a { display: block; }
+.banner a img { display: block; }
+.produtos .destaques .lista-horizontal { margin-top: 0; margin-bottom: 0; }

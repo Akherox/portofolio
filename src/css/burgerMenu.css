@@ -1,5 +1,5 @@
 * { box-sizing: border-box; }
-
+/*IMPLEMENTAR EVENTO BLUR (CLICK FORA DO MENU FECHA ELE)*/
 .menu
 {
   display: block;

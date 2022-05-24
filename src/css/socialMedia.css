@@ -1,0 +1,56 @@
+#lateral a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  
+  
+  #lateral {
+    height: auto;
+    width: 10px;
+    text-align: end;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  #lateral .social {
+    margin-left: -70px;
+    width: 100px;
+    display: inline-table;
+    height: 0px;
+    transition: all .25s ease;
+    box-shadow: 0px 0px 6px 0px #3E3D3D;
+    cursor: pointer;
+  }
+  
+  #lateral .social img {
+    object-fit: fill;
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+  
+  #lateral .social:hover {
+    margin-left: -30px;
+    width: 80px;
+  }
+  
+  #lateral .twitter {
+    background-color: #1DA1F2;
+  }
+  
+  #lateral .instagram {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  
+  #lateral .github {
+    background-color: #000000;
+  }
+  
+  #lateral .linkedin {
+    background-color: #0976B4;
+  }

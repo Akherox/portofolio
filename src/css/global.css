@@ -3,45 +3,22 @@
 }
 
 /* ---------- FORMATAÇÂO GERAL ---------- */
-body {
-  /* background-image: linear-gradient(to right, #3c3d3f, #2d4e68);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-  /*ESSE FORMATO É PARA APROVEITAR O "GRADIENT" (DEGRADADO) DAS CORES*/
-  margin: 0;
-  padding: 0;
-  font-family: Lato, Helvetica, Arial, sans-serif;
-  background: #2F2F2F;
-  /* color: #B6B6B6;  */
-  color: #8A8A8A;
-}
+body {  margin: 0;  padding: 0;  font-family: Lato, Helvetica, Arial, sans-serif;  background: #2F2F2F;
+  /* color: #B6B6B6;  */  color: #8A8A8A;}
 
-main {
-  max-width: 100vh;
-  margin: 0 auto;
-  max-height: 100%;
-}
+.container {  width: 700px;  margin: 0 auto; }
 
-main .conteudo {
-  text-align: center;
-  margin: auto;
-}
+main {  width: 700px;  margin: 0 auto; }
 
-nav {
-  margin: 0;
-}
+nav {  width: 0 0;}
 
-h1 {
-  color: #CACACA;
-  margin-top: 0px;
-}
+main .conteudo {  text-align: center;  margin: auto; } 
 
-h3 {
-  color: #CACACA;
-  font-size: 20px;
-  margin-bottom: -10px;
-  margin-top: 0px;
-}
+h1 {  font-weight: 700; font-size: 29px; line-height: 49px; color: #CACACA;  margin-top: 0px; }
+
+h3 {  color: #CACACA;  font-size: 20px;  margin-bottom: -10px;  margin-top: 0px; }
+
+p { font-weight: 400; font-size: 17px; line-height: 33px; }
 
 button {
   text-transform: uppercase;
@@ -58,13 +35,8 @@ button {
   color: white;
   padding-bottom: 7px;
 }
-button:active {
-  transform: scale(0.90);
-}
-button a {
-  text-decoration: none;
-  color: white;
-}
+button:active {  transform: scale(0.90); }
+button a {  text-decoration: none;  color: white; }
 button:hover {
   transform: rotate(0deg) skew(0deg) scale(.9);
   box-shadow: inset 0px -12px 0.5px -8px rgb(0, 21, 138);
@@ -157,11 +129,9 @@ textarea {
 .circular-botao-social {
   padding-top: 15px;
 }
-
 textarea {
   resize: none;
 }
-
 .text {
   color: white;
   font-size: 20px;
@@ -172,34 +142,42 @@ textarea {
   -ms-transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-
-.svg-inline--fa {
-  vertical-align: -0.200em;
-}
-
 .circular-botao-social {
   text-align: center;
 }
-
 .circular-botao-social .social-botao {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 3.5rem;
+  height: 3.5rem;
   padding: 0;
   text-decoration: none;
   text-align: center;
   color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
   transition: all 0.5s ease;
   margin-right: 20px;
+  background-color: white;
+  border-radius: 1.6875rem;
+  overflow: hidden;
 }
-
+.circular-botao-social .social-botao img {
+  object-fit: fill;
+  max-width: 100%;
+  max-height: 100%;
+}
 .circular-botao-social .social-botao:hover,
 .circular-botao-social .social-botao:focus {
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+.i-twitter {
+  background-color:  #1DA1F2;
+}
+.i-github {
+  background-color:  black;
+}
+.i-linkedin {
+  background-color: #007bb5;
 }
