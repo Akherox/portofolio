@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700); */
 
 * {
   box-sizing: border-box;
@@ -30,8 +30,13 @@ a {
   display: inline-block;
 }
 
+.menu-content .fa {
+  font-weight: 800;
+  color: #0f35df;
+}
+
 .card a {
-  color: rgb(102, 102, 102);
+  color: rgb(70, 64, 64);
 }
 
 .card span {
@@ -152,7 +157,8 @@ a {
 
 /* // Second example styles ///////////////////////////////////////////////////////////////////////////////*/
 .example-2 .wrapper {
-  background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center / cover no-repeat;
+  background: url("/src/imagens/NasaPics.jpg") center / cover no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/imagens/NasaPics.jpg");
 }
 
 .example-2 .wrapper:hover .menu-content span {
@@ -352,57 +358,3 @@ a {
     position: relative;
   
 }
-
-  /*---------- BOTAO TOP -----------------------------------------------------------------------------------*/
-   .botaoTop{
-    background: #CACACA;
-    /* border-radius: 10px 0 10px 0; */
-    position: absolute;
-    padding: 7px 5em 7px 5em;
-    color: #2F2F2F;
-    font-size: 12px;
-    font-family: sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 5px;
-    transition: .5s;
-  }
-  .botaoTop:before,
-  .botaoTop:after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 8px;
-    /* border-radius: 10px 0 10px 0; */
-    background: #8A8A8A;
-    pointer-events: none;
-    transform-style: linear;
-    transition-property: width,opacity,transform,box-shadow;
-    transition-duration: 0.5s
-  
-  }
-  .botaoTop:before{
-    top: 0;
-    left:0;
-  }
-  .botaoTop:after{
-    top: 0;
-    right:0;
-  }
-  .botaoTop:hover:before{
-    
-    width:100%;
-    opacity:0.1;
-    /* transform:translate(5px,-5px); */
-    /* box-shadow:+2px 2px 2px rgba(0,0,0,.1);  */
-    transition-delay: 0s,0.5s,1s,1.5s
-  }
-  .botaoTop:hover:after{
-    
-    width:100%;
-    opacity:0.1;
-    /* transform:translate(10px,-10px); */
-    /* box-shadow:+2px 2px 2px rgba(0,0,0,.1); */
-    transition-delay: 0s,0.5s,1s,1.5s
-  }

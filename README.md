@@ -1,5 +1,5 @@
 # Portofolio Pessoal
-Portofolio de projetos pessoais criado baixo a instrução e prientação da Toti na Turma 15 de "Programador Full-Stack", terá autualizações continuas no andamento do curso.
+Portofolio de projetos pessoais criado baixo a instrução e orientação da Toti na Turma 15 de "Programador Full-Stack", terá autualizações continuas no andamento do curso.
 
 ## Conteudo
 
@@ -37,7 +37,8 @@ Portofolio de projetos pessoais criado baixo a instrução e prientação da Tot
 
 ### O que eu aprendi (até agora)
 
-O "input" pode ficar dentro ou fora do "label".
+O "input" pode ficar dentro ou fora do "label" e posso redirecionar ao "Redactar e-mail" do mesmo usuario quando ele clicar no link de contato.
+Posso implementar sombra de na imagen importando ela no mesmo CSS.
 
 ```html
 <form class="formContato">
@@ -53,23 +54,32 @@ O "input" pode ficar dentro ou fora do "label".
   </p>
 </form>
 ```
-<!-- ```css
-main {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(212, 45%, 89%);  
+```html
+<p>Você quer bater um papo comigo sobre algum projeto? <br> Sinta-se livre para me contatar pelo link:
+<br>
+  <a class="contato-email"
+    href="mailto:bryanalexbm@gmail.com?subject=Beleza?%20Gostei%20do%20teu%20Portofolio...">
+    FALA COMIGO!!!
+  </a>
+</p>
+```
+```css
+.example-4 .wrapper {
+  background: url("/src/imagens/MarvelPVP1.jpg") center / cover no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+    url("/src/imagens/MarvelPVP1.jpg");
 }
-``` -->
+```
 
 ### Desenvolvimento contínuo
 
-Focarei em melhorar minha semântica nos proximos projetos.
+Focarei em melhorar minha semântica e organizar meu CSS de melhor jeito nos proximos projetos.
 
 ### Recursos úteis
 
-- [Recurso de exemplos](https://themeforest.net/)
+- [Recurso de exemplos de portofolios](https://themeforest.net/)
+- [Recurso de exemplos CSS](https://codepen.io/)
 - [Recurso de icones](https://devicon.dev/)
 - Esses sites me deram ideias para desenvolver o meu "portofolio" e usar os icones.
 
