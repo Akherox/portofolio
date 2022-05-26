@@ -3,7 +3,7 @@
 .controle .setas {
     margin: -33px 0 0;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     cursor: pointer;
     z-index: 0;
