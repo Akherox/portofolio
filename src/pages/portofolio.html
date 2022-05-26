@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/src/css/controlPage.css">
     <link rel="stylesheet" href="/src/css/portofolio.css">
     <link rel="stylesheet" href="/src/css/responsivo.css">
+    <link rel="stylesheet" href="/src/css/listaProjetos.css">
 </head>
 
 <body>
@@ -45,7 +46,8 @@
             <section class="conteudo">
                 <div class="informacao">
                     <h1>Olá! Sou Bryan Bravo</h1>
-                    <p>Meus projetos com HTML, CSS e JavaScript</p>
+                    <p>Meus projetos com HTML, CSS e JavaScript, algumas participações com projetos usando Vue e uma listagem dos meus projetos publicos no meu perfil do GitHub</p>
+                    <h2>Projetos destacados mais atuais</h2>
                 </div>
                 <div class="row">
                     <div class="example-1 card">
@@ -55,11 +57,6 @@
                                 <span class="month">Mar</span>
                                 <span class="year">2022</span>
                             </div>
-                            <ul class="menu-content">
-                                <li><a href="#" class="fa "><span>AK</span></a></li>
-                                <li><a href="#" class="fa "><span>OX</span></a></li>
-                                <li><a href="#" class="fa "><span>01</span></a></li>
-                            </ul>
                             <div class="data">
                                 <div class="content">
                                         <span class="author">Akherox | GitHub</span>
@@ -67,7 +64,7 @@
                                         </h3>  
                                         <p class="text">Site de venda de "bikes", com telas de: produtos, contato, informações e compra (Only-FronEnd).
                                         </p>
-                                        <a href="#" class="botaoTop">Mais</a>
+                                        <a href="https://akherox.github.io/bikeshopmais/" target="_blank" class="botaoTop">Mais</a>
                                     </div>
                                 </div>
                             </div>
@@ -81,19 +78,13 @@
                                     <span class="month">Aug</span>
                                     <span class="year">2016</span>
                                 </div>
-                                <ul class="menu-content">
-                                    <li><a href="#" class="fa "><span>AK</span></a></li>
-                                    <li><a href="#" class="fa "><span>OX</span></a></li>
-                                    <li><a href="#" class="fa "><span>02</span></a></li>
-                                </ul>
                             </div>
                             <div class="data">
                                 <div class="content">
                                     <span class="author">Akherox | GitHub</span>
-                                    <h3 class="title"><a href="#">Stranger Things: The sound of the Upside Down</a></h3>
-                                    <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital
-                                        release of the Survive soundtrack, out today.</p>
-                                    <a href="#" class="botaoTop">Mais</a>
+                                    <h3 class="title"><a href="#">NASA Astronomy | Today Pictures </a></h3>
+                                    <p class="text">Site de busca de fotos atuais da NASA, as fotos terão uma breve descrição.</p>
+                                    <a href="https://akherox.github.io/nasa_pics/" target="_blank" class="botaoTop">Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -106,18 +97,13 @@
                                     <span class="month">Aug</span>
                                     <span class="year">2016</span>
                                 </div>
-                                <ul class="menu-content">
-                                    <li><a href="#" class="fa "><span>AK</span></a></li>
-                                    <li><a href="#" class="fa "><span>OX</span></a></li>
-                                    <li><a href="#" class="fa "><span>03</span></a></li>
-                                </ul>
                             </div>
                             <div class="data">
                                 <div class="content">
                                     <span class="author">Akherox | GitHub</span>
                                     <h3 class="title"><a href="#">MARVEL VS | Gameboard</a></h3>
                                     <p class="text">Interfase de videogame "battle vs" dos personajens da marvel (Only-FronEnd).</p>
-                                    <a href="#" class="botaoTop">Mais</a>
+                                    <a href="https://akherox.github.io/marvel-pvp/" target="_blank" class="botaoTop">Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -129,17 +115,12 @@
                                 <span class="month">Mar</span>
                                 <span class="year">2020</span>
                             </div>
-                            <ul class="menu-content">
-                                <li><a href="#" class="fa "><span>AK</span></a></li>
-                                <li><a href="#" class="fa "><span>OX</span></a></li>
-                                <li><a href="#" class="fa "><span>04</span></a></li>
-                            </ul>
                             <div class="data">
                                 <div class="content">
                                     <span class="author">Akherox | GitHub</span>
                                     <h3 class="title"><a href="#">Pokedex  | Dev Em Dobro</a></h3>
                                     <p class="text">Interfase de uma Pokedex (videogame), com pokemons tipo GIFs.</p>
-                                    <a href="#" class="botaoTop">Mais</a>
+                                    <a href="https://akherox.github.io/pokedex/" target="_blank" class="botaoTop">Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +154,14 @@
                             </span>
                         </a>
                     </div>
+                    
                 </div>
+                <div class="listagemProjetosApi">
+                    <h2 class="apiTitulo"> Listagem de Projetos</h2>
+                    <hr >
+                    <ul id="apiList"></ul>
+                </div>
+                
             </section>
         </main>
     </section>
@@ -188,5 +176,5 @@
         </p>
     </footer>
 </body>
-
+<script src="/js/index.js"></script>
 </html>

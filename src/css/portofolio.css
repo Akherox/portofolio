@@ -95,6 +95,10 @@ a {
   display: inline-block;
 }
 
+.apiTitulo {
+  display: inline-block;
+}
+
 
 /* // First example styles ///////////////////////////////////////////////////////////////////////////////*/
 .example-1 .wrapper {

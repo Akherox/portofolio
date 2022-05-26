@@ -1,0 +1,14 @@
+.apiTitulo {
+    color: #CACACA;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    margin: 28px auto;
+}
+
+li span {
+    margin: 18px;
+}
+
