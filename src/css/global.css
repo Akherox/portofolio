@@ -128,6 +128,14 @@ textarea {
   margin-top: 0%;
 }
 
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #0f35df;
+  padding-top: 10px;
+}
+
 
 /* ---------- BOTÕES - REDES SOCIAIS ---------- */
 .circular-botao-social {

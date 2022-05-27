@@ -51,15 +51,15 @@
                         e vamos conversar.</p>
                 </div>
                 <div>
-                    <form class="grid-container" action="https://formsubmit.co/3a4a62ca5981e91ee0d95fceff265cc4" method="POST">
+                    <form class="grid-container" action="https://formsubmit.co/3a4a62ca5981e91ee0d95fceff265cc4" method="POST" id="form">
                         <div class="metade-izquerda fContato">
-                                <input type="text" name="name" id="in-nome" placeholder="Digite seu nome" required />
-                                <input type="email" name="email" id="in-email" placeholder="Digite seu e-mail" required />
-                                <button type="submit" id="in-enviar">Enviar</button>
+                                <input type="text" name="name" id="nome" placeholder="Digite seu nome" required />
+                                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required />
+                                <button type="submit" id="enviar">Enviar</button>
+                                <p class="warnings" id="warnings"></p>
                         </div>
                         <div class="metade-direita fContato">
-                            <textarea type="text" name="coments" id="in-mensagem" placeholder="Mensagem" required></textarea>
-                            <!-- cols="40" rows="15"  -->
+                            <textarea type="text" name="coments" id="mensagem" placeholder="Mensagem" required></textarea>
                         </div>
                         <input type="hidden" name="_next" value="https://portofolio-three.vercel.app/src/pages/contato.html">
                         <input type="hidden" name="_captcha" value="false">
@@ -86,9 +86,7 @@
         <footer class="rodape">
             <h3>Ou entre em contato pelas redes sociais!</h3>
             <div class="circular-botao-social">
-                <!-- <a class="social-botao twitter" href="https://www.twitter.com/" target="_blank"><img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter Icon" class="fab fa-twitter" /></a> -->
-                <a class="social-botao facebook" href="https://twitter.com/Bryanalexbm1" target="_blank"><img
+                <a class="social-botao twitter" href="https://twitter.com/Bryanalexbm1" target="_blank"><img
                     src="/src/icons/twitter.png" alt="Twitter Icon" class="i-twitter" /></a>
                 <a class="social-botao github" href="https://github.com/Akherox" target="_blank">
                   <img src="/src/icons/github.png"

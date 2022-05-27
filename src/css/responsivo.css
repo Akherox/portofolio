@@ -16,14 +16,13 @@
   @media (max-width: 767px){
   
     main{
-        padding: 0 5px;
-        justify-content: start;
-        text-align: center;
-    }
-    t1 {
-        font-size: 22px;
+       display: none;
+       visibility: hidden;
     }
     section .controle {
+        display: none;
+    }
+    .navegacao {
         display: none;
     }
   }
@@ -31,12 +30,13 @@
   @media(max-width: 360px){
     
     main {
-        text-align: center;
-    }
-    h1 {
-        font-size: 19px;
+        display: none;
+        visibility: hidden;
     }
     section .controle {
+        display: none;
+    }
+    .navegacao {
         display: none;
     }
   }
