@@ -1,10 +1,10 @@
 
-const ul = document.querySelector("#apiList") 
+const ul = document.querySelector("#apiList")
 
 function getApiGitHub() {
     fetch("https://api.github.com/users/Akherox/repos")
         .then(async res => {
-            if(!res.ok) {
+            if (!res.ok) {
                 throw new Error(res.status)
             }
             var data = await res.json()
@@ -24,3 +24,37 @@ function getApiGitHub() {
 }
 
 getApiGitHub()
+
+/* VALIDACAO FORMULARIO CONTATO *//////////////////////////////////////////////////////////////////////////
+function validForm() {
+    //alert("alert")
+
+    var nome = document.form.nome;
+    var email = document.form.email;
+    var mensagem = document.form.mensagem;
+
+    if (nome.value.length == "") {
+        nome.nextElementSibling.style.display = "block";
+        nome.style.border = "2px solid #0f35df";
+        return false
+    } else {
+        nome.nextElementSibling.style.display = "none";
+        nome.style.border = "2px trasnparent";
+    }
+    if (!email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/) || email.value == "") {
+        email.nextElementSibling.style.display = "block";
+        email.style.border = "2px solid #0f35df";
+        return false
+    } else {
+        email.nextElementSibling.style.display = "none";
+        email.style.border = "2px solid trasnparent";
+    }
+    if (mensagem.value.length <= 8) {
+        mensagem.nextElementSibling.style.display = "block";
+        mensagem.style.border = "2px solid #0f35df";
+        return false
+    } else {
+        mensagem.nextElementSibling.style.display = "none";
+        mensagem.style.border = "2px solid trasnparent";
+    }
+}
