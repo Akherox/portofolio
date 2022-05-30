@@ -25,34 +25,34 @@ function getApiGitHub() {
 getApiGitHub()
 
 /* VALIDAÇÂO CONTATO *////////////////////////////////////////////////////////////////////////////////////////
-const nome = document.getElementById("nome")
-const email = document.getElementById("email")
-const mensagem = document.getElementById("mensagem")
-const form = document.getElementById("form")
-const paragrafo = document.getElementById("warnings")
+function validForm() {
 
-form.addEventListener("submit", e=> {
-    e.preventDefault()
-    let warnings = ""
-    let enter = false
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-    paragrafo.innerHTML = ""
-    if(nome.value.length <6){
-        warnings +- `O nome não é valido <br>`
-        enter = true
+    var nome = document.form.nome;
+    var email = document.form.email;
+    var mensagem = document.form.mensagem;
+
+    if (nome.value.length < 6) {
+        nome.nextElementSibling.style.display = "block";
+        nome.style.border = "2px solid #0f35df";
+        return false
+    } else {
+        nome.nextElementSibling.style.display = "none";
+        nome.style.border = "2px solid white";
     }
-    console.log(regexEmail.test(email.value))
-    if(!regexEmail.test(email.value)) {
-        warnings +- `O email não é valido <br>`
-        enter = true
+    if (!email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/) || email.value == "") {
+        email.nextElementSibling.style.display = "block";
+        email.style.border = "2px solid #0f35df";
+        return false
+    } else {
+        email.nextElementSibling.style.display = "none";
+        email.style.border = "2px solid white";
     }
-    if(mensagem.value.length <8){
-        warnings +- `O mensagen não tem suficiente conteudo <br>`
-        enter = true
+    if (mensagem.value.length < 8) {
+        mensagem.nextElementSibling.style.display = "block";
+        mensagem.style.border = "2px solid #0f35df";
+        return false
+    } else {
+        mensagem.nextElementSibling.style.display = "none";
+        mensagem.style.border = "2px solid white";
     }
-    if(enter){
-        paragrafo.innerHTML = warnings
-    }else{
-        paragrafo.innerHTML = "Mensagen eviado"
-    }
-})
+}

@@ -51,15 +51,23 @@
                         e vamos conversar.</p>
                 </div>
                 <div>
-                    <form class="grid-container" action="https://formsubmit.co/3a4a62ca5981e91ee0d95fceff265cc4" method="POST" id="form">
+                    <form name="form" class="grid-container fContato" onsubmit="return validForm()" action="https://formsubmit.co/3a4a62ca5981e91ee0d95fceff265cc4" method="POST">
                         <div class="metade-izquerda fContato">
-                                <input type="text" name="name" id="nome" placeholder="Digite seu nome" required />
-                                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required />
-                                <button type="submit" id="enviar">Enviar</button>
-                                <p class="warnings" id="warnings"></p>
+                            <div class="rowLine">
+                                <input type="text" name="name" id="nome" placeholder="Digite seu nome" />
+                                <span class="error">Deve conter no minimo 6 dígitos</span>
+                            </div>
+                            <div class="rowLine">
+                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                                <span class="error">Email não valido</span>
+                            </div>
+                            <button type="submit" value="submit" id="enviar">Enviar</button>
                         </div>
                         <div class="metade-direita fContato">
-                            <textarea type="text" name="coments" id="mensagem" placeholder="Mensagem" required></textarea>
+                            <div class="rowLine">
+                                <textarea type="text" id="mensagem" name="coments" placeholder="Mensagem"></textarea>
+                                <span class="error">Deve possuir mais de 8 caracteres</span>
+                            </div>
                         </div>
                         <input type="hidden" name="_next" value="https://portofolio-three.vercel.app/src/pages/contato.html">
                         <input type="hidden" name="_captcha" value="false">
