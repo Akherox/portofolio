@@ -51,25 +51,27 @@
                         e vamos conversar.</p>
                 </div>
                 <div>
-                    <form name="form" class="grid-container fContato" onsubmit="return validForm()" action="valid.html">
+                    <form name="form" class="grid-container fContato" onsubmit="return validForm()" action="https://formsubmit.co/3a4a62ca5981e91ee0d95fceff265cc4" method="POST">
                         <div class="metade-izquerda fContato">
                             <div class="rowLine">
-                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" />
-                                <span class="error">Nome não valido</span>
+                                <input type="text" name="name" id="nome" placeholder="Digite seu nome" />
+                                <span class="error">Deve conter no minimo 6 dígitos</span>
                             </div>
                             <div class="rowLine">
                                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
                                 <span class="error">Email não valido</span>
                             </div>
                             <button type="submit" value="submit" id="enviar">Enviar</button>
-                            <p id="warnings"></p>
                         </div>
                         <div class="metade-direita fContato">
                             <div class="rowLine">
-                                <textarea type="text" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
-                                <span class="error">Mensagem não valido</span>
+                                <textarea type="text" id="mensagem" name="coments" placeholder="Mensagem"></textarea>
+                                <span class="error">Deve possuir mais de 8 caracteres</span>
                             </div>
                         </div>
+                        <input type="hidden" name="_next" value="https://portofolio-three.vercel.app/src/pages/contato.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="box">
                     </form>
                 </div>
                 <div class="controle">
@@ -104,5 +106,5 @@
         </footer>
     </section>
 </body>
-
+<script src="/js/index.js"></script>
 </html>

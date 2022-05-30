@@ -33,13 +33,13 @@ function validForm() {
     var email = document.form.email;
     var mensagem = document.form.mensagem;
 
-    if (nome.value.length == "") {
+    if (nome.value.length < 6) {
         nome.nextElementSibling.style.display = "block";
         nome.style.border = "2px solid #0f35df";
         return false
     } else {
         nome.nextElementSibling.style.display = "none";
-        nome.style.border = "2px trasnparent";
+        nome.style.border = "2px solid white";
     }
     if (!email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/) || email.value == "") {
         email.nextElementSibling.style.display = "block";
@@ -47,14 +47,14 @@ function validForm() {
         return false
     } else {
         email.nextElementSibling.style.display = "none";
-        email.style.border = "2px solid trasnparent";
+        email.style.border = "2px solid white";
     }
-    if (mensagem.value.length <= 8) {
+    if (mensagem.value.length < 8) {
         mensagem.nextElementSibling.style.display = "block";
         mensagem.style.border = "2px solid #0f35df";
         return false
     } else {
         mensagem.nextElementSibling.style.display = "none";
-        mensagem.style.border = "2px solid trasnparent";
+        mensagem.style.border = "2px solid white";
     }
 }

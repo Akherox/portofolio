@@ -129,6 +129,18 @@ textarea {
   margin-top: 0%;
 }
 
+.rowLine { position: relative; margin-bottom: 13px; }
+
+.fContato .error { 
+  display: block; 
+  /* width: 100%; Para ubicar as letras*/
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0.3em;
+  color: #4366ff;
+  display: none;
+}
+
 
 /* ---------- BOTÕES - REDES SOCIAIS ---------- */
 .circular-botao-social {
