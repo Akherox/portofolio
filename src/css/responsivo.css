@@ -11,22 +11,6 @@
         width: 100px;
         height: 100px;
     } */
-<<<<<<< HEAD
-  }
-  
-  @media (max-width: 767px){
-  
-    main{
-       display: none;
-       visibility: hidden;
-    }
-    section .controle {
-        display: none;
-    }
-    .navegacao {
-        display: none;
-    }
-=======
 }
 
 @media (max-width: 767px) {
@@ -43,7 +27,6 @@
   .conteudo {
     width: 80%;
     margin: auto;
->>>>>>> develop
   }
   section .controle {
     display: none;
@@ -87,17 +70,6 @@
 @media (max-width: 360px) {
 
     main {
-<<<<<<< HEAD
-        display: none;
-        visibility: hidden;
-    }
-    section .controle {
-        display: none;
-    }
-    .navegacao {
-        display: none;
-    }
-=======
         width: 100%;
         margin: 0px;
     }
@@ -150,7 +122,6 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
->>>>>>> develop
   }
 }
 

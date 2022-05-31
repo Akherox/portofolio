@@ -24,16 +24,8 @@ function getApiGitHub() {
 }
 getApiGitHub()
 
-<<<<<<< HEAD
 /* VALIDAÇÂO CONTATO *////////////////////////////////////////////////////////////////////////////////////////
 function validForm() {
-=======
-getApiGitHub()
-
-/* VALIDACAO FORMULARIO CONTATO *//////////////////////////////////////////////////////////////////////////
-function validForm() {
-    //alert("alert")
->>>>>>> develop
 
     var nome = document.form.nome;
     var email = document.form.email;
