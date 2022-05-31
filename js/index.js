@@ -1,10 +1,10 @@
 
-const ul = document.querySelector("#apiList") 
+const ul = document.querySelector("#apiList")
 
 function getApiGitHub() {
     fetch("https://api.github.com/users/Akherox/repos")
         .then(async res => {
-            if(!res.ok) {
+            if (!res.ok) {
                 throw new Error(res.status)
             }
             var data = await res.json()
@@ -24,8 +24,16 @@ function getApiGitHub() {
 }
 getApiGitHub()
 
+<<<<<<< HEAD
 /* VALIDAÇÂO CONTATO *////////////////////////////////////////////////////////////////////////////////////////
 function validForm() {
+=======
+getApiGitHub()
+
+/* VALIDACAO FORMULARIO CONTATO *//////////////////////////////////////////////////////////////////////////
+function validForm() {
+    //alert("alert")
+>>>>>>> develop
 
     var nome = document.form.nome;
     var email = document.form.email;
