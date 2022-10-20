@@ -14,16 +14,27 @@
 }
 
 @media (max-width: 767px) {
+  .menu {
+    display: block;
+    position: fixed;
+    top: 25px;
+    left: 25px;
 
-    html {
-        width: 100%;
-    }
-    .text {
-        font-size: 22px;
-      }
-    main {
-        width: 100%;
-    }
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  html {
+    width: 100%;
+  }
+  .text {
+    font-size: 22px;
+  }
+  main {
+    width: 100%;
+  }
   .conteudo {
     width: 80%;
     margin: auto;
@@ -68,14 +79,13 @@
 }
 
 @media (max-width: 360px) {
-
-    main {
-        width: 100%;
-        /* margin: 0px; */
-    }
-    .text {
-        font-size: 16px;
-      }
+  main {
+    width: 100%;
+    /* margin: 0px; */
+  }
+  .text {
+    font-size: 16px;
+  }
   .conteudo {
     width: 95%;
     /* background-color: aquamarine; */
@@ -107,7 +117,7 @@
     margin-left: -0.5em;
   }
   /* HABILIDADES  /////////////////////////////////////////////////////////////////////////////////////*/
-  
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;

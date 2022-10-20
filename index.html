@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=SITE_MIN_WIDTH, initial-scale=1, maximum-scale=1"> -->
     <link rel="shortcut icon" href="/src/imagens/ico2.png" type="image/x-icon">
     <title>Portofolio | Desenvolvimento Full-Stack | Sobre - Akherox</title>
     <link rel="stylesheet" href="/src/css/global.css">
     <link rel="stylesheet" href="/src/css/burgerMenu.css">
     <link rel="stylesheet" href="/src/css/controlPage.css">
     <link rel="stylesheet" href="/src/css/responsivo.css">
+    <link rel="stylesheet" href="/src/css/typingEffect.css">
+
+    <script type="text/javascript">
+        function myFunction(x) {
+            if (x.matches) {
+                window.location.href = "/src/pages/nao-responsivo.html";
+            }
+            // else {
+            // window.location.href = "/index.html";
+            // }
+        }
+        var x = window.matchMedia("(max-width: 1000px)")
+        myFunction(x)
+        x.addListener(myFunction)
+    </script>
 </head>
 
 <body>
@@ -43,11 +59,14 @@
         <main class="container">
             <section class="conteudo index">
                 <div class="informacao informacoes">
-                    <h1>Olá! Sou Bryan Bravo</h1>
+                    <h1>Olá! Sou 𝔸𝕂HERO𝕏</h1>
                     <p>Sou um Desenvolvedor Junior e atualmente estou procurando uma oportunidade de me avalacar com uma
                         empressa de sucesso na area da Tecnologia de Informação. Estou estudando Desenvolvimento Full
                         Stack e tenho a experiencia pratica necessaria para começar a desenvolver sites web ou apps</p>
                     <button><a href="/src/pages/portofolio.html">IR PARA O PORTOFOLIO</a></button>
+                </div>
+                <div class="container-typed-text">
+                    <p>Coding is <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
                 </div>
                 <div class="controle">
                     <div class="setas next">
@@ -71,5 +90,6 @@
         </footer>
     </section>
 </body>
+<script src="/js/index.js"></script>
 
 </html>

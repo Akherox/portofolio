@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="/src/css/burgerMenu.css">
     <link rel="stylesheet" href="/src/css/controlPage.css">
     <link rel="stylesheet" href="/src/css/responsivo.css">
+    <script type="text/javascript">
+        function myFunction(x) {
+            if (x.matches) {
+                window.location.href = "/src/pages/nao-responsivo.html";
+            }
+            // else {
+            // window.location.href = "/index.html";
+            // }
+        }
+        var x = window.matchMedia("(max-width: 1000px)")
+        myFunction(x)
+        x.addListener(myFunction)
+    </script>
 </head>
 
 <body>
@@ -51,7 +64,8 @@
                         e vamos conversar.</p>
                 </div>
                 <div>
-                    <form name="form" class="grid-container fContato" onsubmit="return validForm()" action="https://formsubmit.co/3a4a62ca5981e91ee0d95fceff265cc4" method="POST">
+                    <form name="form" class="grid-container fContato" onsubmit="return validForm()"
+                        action="https://formsubmit.co/3a4a62ca5981e91ee0d95fceff265cc4" method="POST">
                         <div class="metade-izquerda fContato">
                             <div class="rowLine">
                                 <input type="text" name="name" id="nome" placeholder="Digite seu nome" />
@@ -69,7 +83,8 @@
                                 <span class="error">Deve possuir mais de 8 caracteres</span>
                             </div>
                         </div>
-                        <input type="hidden" name="_next" value="https://portofolio-three.vercel.app/src/pages/contato.html">
+                        <input type="hidden" name="_next"
+                            value="https://portofolio-three.vercel.app/src/pages/contato.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="box">
                     </form>
@@ -95,7 +110,7 @@
             <h3>Ou entre em contato pelas redes sociais!</h3>
             <div class="circular-botao-social">
                 <a class="social-botao twitter" href="https://twitter.com/Bryanalexbm1" target="_blank"><img
-                    src="/src/icons/twitter.png" alt="Twitter Icon" class="i-twitter" /></a>
+                        src="/src/icons/twitter.png" alt="Twitter Icon" class="i-twitter" /></a>
                 <a class="social-botao github" href="https://github.com/Akherox" target="_blank">
                     <img src="/src/icons/github.png" class="i-github" /></a>
                 <a class="social-botao linkedin" href="https://www.linkedin.com/in/alex-bravo-008-mk"
@@ -106,4 +121,5 @@
     </section>
 </body>
 <script src="/js/index.js"></script>
+
 </html>

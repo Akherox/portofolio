@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="/src/css/portofolio.css">
     <link rel="stylesheet" href="/src/css/responsivo.css">
     <link rel="stylesheet" href="/src/css/listaProjetos.css">
+    <script type="text/javascript">
+        function myFunction(x) {
+            if (x.matches) {
+                window.location.href = "/src/pages/nao-responsivo.html";
+            }
+            // else {
+            // window.location.href = "/index.html";
+            // }
+        }
+        var x = window.matchMedia("(max-width: 1000px)")
+        myFunction(x)
+        x.addListener(myFunction)
+    </script>
 </head>
 
 <body>
@@ -45,10 +58,10 @@
         <main>
             <section class="conteudo">
                 <div class="informacao">
-                    <h1>Olá! Sou Bryan Bravo</h1>
+                    <h1>Olá! Sou 𝔸𝕂HERO𝕏</h1>
                     <p>Meus projetos com HTML, CSS e JavaScript, algumas participações com projetos usando Vue e uma
                         listagem dos meus projetos publicos no meu perfil do GitHub</p>
-                    <h2>Projetos destacados mais atuais</h2>
+                    <h2>Projetos destacados</h2>
                 </div>
                 <div class="row">
                     <div class="example-1 card">
@@ -181,7 +194,7 @@
             </p>
         </footer>
     </section>
-    
+
 </body>
 <script src="/js/index.js"></script>
 

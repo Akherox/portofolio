@@ -3,27 +3,61 @@
 }
 
 /* ---------- FORMATAÇÂO GERAL ---------- */
-body {  margin: 0;  padding: 0;  font-family: Lato, Helvetica, Arial, sans-serif;  background: #2F2F2F;
-  /* color: #B6B6B6;  */  color: #8A8A8A;}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  background: #2f2f2f;
+  /* color: #B6B6B6;  */
+  color: #8a8a8a;
+}
 
-.container {  width: 700px;  margin: 0 auto; }
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
 
 .pagina {
   margin-top: 6em;
 }
 
-main {  width: 700px;  margin: 0 auto; }
+main {
+  width: 700px;
+  margin: 0 auto;
+}
 
-.menu {  width: 22px;}
-.navegação {  width: 22px;}
+.menu {
+  width: 22px;
+}
+.navegação {
+  width: 22px;
+}
 
-main .conteudo {  text-align: center;  margin: auto; } 
+main .conteudo {
+  text-align: center;
+  margin: auto;
+}
 
-h1 {  font-weight: 700; font-size: 29px; line-height: 49px; color: #CACACA;  margin-top: 0px; }
+h1 {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 49px;
+  color: #cacaca;
+  margin-top: 0px;
+}
 
-h3 {  color: #CACACA;  font-size: 20px;  margin-bottom: -10px;  margin-top: 0px; }
+h3 {
+  color: #cacaca;
+  font-size: 20px;
+  margin-bottom: -10px;
+  margin-top: 0px;
+}
 
-p { font-weight: 400; font-size: 17px; line-height: 33px; }
+p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 33px;
+}
 
 button {
   text-transform: uppercase;
@@ -34,41 +68,44 @@ button {
   font-weight: 600;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 9px 1px -4px #00000070, inset 0px -12px 0.5px -8px rgb(0, 21, 138);
+  box-shadow: 0px 9px 1px -4px #00000070,
+    inset 0px -12px 0.5px -8px rgb(0, 21, 138);
   transition: all 0.1s;
   margin-top: 3em;
   color: white;
   padding-bottom: 7px;
 }
-button:active {  transform: scale(0.90); }
-button a {  text-decoration: none;  color: white; }
+button:active {
+  transform: scale(0.9);
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
 button:hover {
-  transform: rotate(0deg) skew(0deg) scale(.9);
+  transform: rotate(0deg) skew(0deg) scale(0.9);
   box-shadow: inset 0px -12px 0.5px -8px rgb(0, 21, 138);
 }
-
 
 /* --------- RODAPE ---------- */
 .rodape {
   text-align: center;
   display: flex;
   width: 100%;
+  height: 100px;
   flex-direction: column;
   padding-top: 30px;
 }
 .contato-email {
   font-weight: bold;
-  color: #8A8A8A;
+  color: #8a8a8a;
   text-decoration: underline solid 2px;
 }
-
 
 /* ---------- SOBRE ----------*/
 /* Vou fazer depois */
 
-
 /* ---------- PORTIFOLIO ----------*/
-
 
 /* ---------- HABILIDADES ---------- */
 .grid-container {
@@ -102,7 +139,6 @@ button:hover {
   margin-bottom: 0.25rem;
 }
 
-
 /* ---------- CONTATO ---------- */
 input,
 textarea {
@@ -129,10 +165,13 @@ textarea {
   margin-top: 0%;
 }
 
-.rowLine { position: relative; margin-bottom: 13px; }
+.rowLine {
+  position: relative;
+  margin-bottom: 13px;
+}
 
-.fContato .error { 
-  display: block; 
+.fContato .error {
+  display: block;
   /* width: 100%; Para ubicar as letras*/
   font-weight: bold;
   font-size: 14px;
@@ -140,7 +179,6 @@ textarea {
   color: #4366ff;
   display: none;
 }
-
 
 /* ---------- BOTÕES - REDES SOCIAIS ---------- */
 .circular-botao-social {
@@ -153,8 +191,7 @@ textarea {
   color: white;
   font-size: 20px;
   position: absolute;
-  
-  
+
   line-height: 20px;
 }
 .circular-botao-social {
@@ -188,60 +225,60 @@ textarea {
   transform: rotate(360deg);
 }
 .i-twitter {
-  background-color:  #1DA1F2;
+  background-color: #1da1f2;
 }
 .i-github {
-  background-color:  black;
+  background-color: black;
 }
 .i-linkedin {
   background-color: #007bb5;
 }
 
- /*---------- BOTAO TOP -----------------------------------------------------------------------------------*/
- .botaoTop{
-  background: #CACACA;
+/*---------- BOTAO TOP -----------------------------------------------------------------------------------*/
+.botaoTop {
+  background: #cacaca;
   position: absolute;
   padding: 7px 5em 7px 5em;
-  color: #2F2F2F;
+  color: #2f2f2f;
   font-size: 12px;
   font-family: sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 5px;
-  transition: .5s;
+  transition: 0.5s;
 }
 .botaoTop:before,
-.botaoTop:after{
+.botaoTop:after {
   content: "";
   position: absolute;
   height: 100%;
   width: 8px;
-  background: #8A8A8A;
+  background: #8a8a8a;
   pointer-events: none;
   transform-style: linear;
-  transition-property: width,opacity,transform,box-shadow;
-  transition-duration: 0.5s
+  transition-property: width, opacity, transform, box-shadow;
+  transition-duration: 0.5s;
 }
-.botaoTop:before{
+.botaoTop:before {
   top: 0;
-  left:0;
+  left: 0;
 }
-.botaoTop:after{
+.botaoTop:after {
   top: 0;
-  right:0;
+  right: 0;
 }
-.botaoTop:hover:before{
-  width:100%;
-  opacity:0.1;
+.botaoTop:hover:before {
+  width: 100%;
+  opacity: 0.1;
   /* transform:translate(5px,-5px); */
   /* box-shadow:+2px 2px 2px rgba(0,0,0,.1);  */
-  transition-delay: 0s,0.5s,1s,1.5s
+  transition-delay: 0s, 0.5s, 1s, 1.5s;
 }
-.botaoTop:hover:after{
-  width:100%;
-  opacity:0.1;
+.botaoTop:hover:after {
+  width: 100%;
+  opacity: 0.1;
   /* transform:translate(10px,-10px); */
   /* box-shadow:+2px 2px 2px rgba(0,0,0,.1); */
-  transition-delay: 0s,0.5s,1s,1.5s
+  transition-delay: 0s, 0.5s, 1s, 1.5s;
 }
