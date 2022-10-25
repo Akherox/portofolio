@@ -21,7 +21,7 @@
     line-height: normal;
   }
   h3 {
-    padding-top: 10px;
+    padding: 10px;
   }
 
   .menu {
@@ -99,6 +99,9 @@
   }
   .metade-direita {
     padding: 20px 0 0 0;
+  }
+  .circular-botao-social {
+    padding: 10px;
   }
 }
 
