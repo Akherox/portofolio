@@ -14,6 +14,16 @@
 }
 
 @media (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+  h1 {
+    line-height: normal;
+  }
+  h3 {
+    padding-top: 10px;
+  }
+
   .menu {
     display: block;
     position: fixed;
@@ -25,15 +35,14 @@
     -webkit-user-select: none;
     user-select: none;
   }
-
-  html {
-    width: 100%;
-  }
   .text {
     font-size: 22px;
   }
-  main {
-    width: 100%;
+  .container-typed-text {
+    flex-wrap: wrap;
+  }
+  .container-typed-text span {
+    margin-top: 20px;
   }
   .conteudo {
     width: 80%;
@@ -42,97 +51,60 @@
   section .controle {
     display: none;
   }
-  /* PORTOFOLIO //////////////////////////////////////////////////////////////////////////////////////////*/
+
+  /*///////////////////////////////////////*/
+  /*/////         PORTOFOLIO         /////*/
   .row {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+  }
+  .card {
+    padding: 0.5rem 0.5rem;
+    width: 100%;
   }
   .wrapper {
-    width: 28rem;
-    margin-left: -9em;
+    width: 100%;
+  }
+  .listagemProjetosApi {
+    overflow: hidden;
   }
   .apiList {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    width: 100%;
   }
   #apiList {
-    padding-left: 0;
+    padding: 0px;
   }
-  #apiList span {
-    margin-left: -0.5em;
+  .rodape {
+    display: inline;
+    width: 95%;
   }
-  /* HABILIDADES  /////////////////////////////////////////////////////////////////////////////////////*/
+  .rodape p {
+    padding: 10px;
+  }
+
+  /*//////////////////////////////////////*/
+  /*/////        HABILIDADES         /////*/
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    padding-right: -3em;
   }
   .grid-item {
     padding-left: 0;
   }
-  .contairner-habilidades {
-    padding-left: 3em;
-    justify-content: center;
+
+  /*//////////////////////////////////////*/
+  /*/////        CONTATO         /////*/
+  .metade-izquerda {
+    padding: 0px;
+  }
+  .metade-direita {
+    padding: 20px 0 0 0;
   }
 }
 
 @media (max-width: 360px) {
-  main {
-    width: 100%;
-    /* margin: 0px; */
-  }
   .text {
     font-size: 16px;
-  }
-  .conteudo {
-    width: 95%;
-    /* background-color: aquamarine; */
-    margin: auto;
-  }
-  section .controle {
-    display: none;
-  }
-  /* PORTOFOLIO //////////////////////////////////////////////////////////////////////////////////////////*/
-  .row {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  .wrapper {
-    width: 20rem;
-    margin-left: -5em;
-  }
-  .apiList {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    width: 20rem;
-  }
-  #apiList {
-    padding-left: 0;
-  }
-  #apiList span {
-    margin-left: -0.5em;
-  }
-  /* HABILIDADES  /////////////////////////////////////////////////////////////////////////////////////*/
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .grid-item {
-    padding-left: 0;
-  }
-  .grid-container > .contairner-habilidades {
-    padding-left: 4rem;
-    justify-content: center;
-  }
-  .rodape {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
   }
 }
 

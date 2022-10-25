@@ -52,9 +52,9 @@ a {
   min-height: 460px;
   position: relative;
   overflow: hidden;
-  border-radius: 8px; 
+  border-radius: 8px;
   /* box-shadow: 0 19px 38px rgba(#000, 0.3), 0 18px 15px rgba(#000, 0.4); */
-  box-shadow: 0 0 22px rgba(0, 0, 0, .6);
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.6);
 }
 
 .card .wrapper:hover {
@@ -64,7 +64,6 @@ a {
 .card .wrapper:hover .data {
   transform: translateY(0);
 }
-
 
 .card .data {
   position: absolute;
@@ -99,11 +98,11 @@ a {
   display: inline-block;
 }
 
-
 /* // First example styles ///////////////////////////////////////////////////////////////////////////////*/
 .example-1 .wrapper {
   background: url("/src/imagens/BikeShopMais.png") 20% 1% / cover no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/imagens/BikeShopMais.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/src/imagens/BikeShopMais.png");
   /* filter: brightness(63%); */
 }
 
@@ -162,7 +161,8 @@ a {
 /* // Second example styles ///////////////////////////////////////////////////////////////////////////////*/
 .example-2 .wrapper {
   background: url("/src/imagens/NasaPics.jpg") center / cover no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/imagens/NasaPics.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/src/imagens/NasaPics.jpg");
 }
 
 .example-2 .wrapper:hover .menu-content span {
@@ -179,21 +179,21 @@ a {
   float: left;
   font-size: 12px;
   color: #fff;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
+} /* ESTUDAR SE VAI FICAR OU NAO*/
 
 .example-2 .menu-content {
   float: right;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
+} /* ESTUDAR SE VAI FICAR OU NAO*/
 
 .example-2 .menu-content li {
   margin: 0 5px;
   position: relative;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
+} /* ESTUDAR SE VAI FICAR OU NAO*/
 
 .example-2 .menu-content span {
   transition: all 0.3s;
   opacity: 0;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
+} /* ESTUDAR SE VAI FICAR OU NAO*/
 
 .example-2 .data {
   color: #fff;
@@ -208,7 +208,7 @@ a {
   color: #fff;
 }
 
-.example-2 .content > a  {
+.example-2 .content > a {
   /* display: block;
   width: 100px;
   margin: 2em auto 1em;
@@ -218,12 +218,11 @@ a {
   line-height: 1;
   position: relative;
   font-weight: 700; */
-    display: block;
-    width: 100px;
-    margin: 2em auto 1em;
-    font-size: 12px;
-    position: relative;
-  
+  display: block;
+  width: 100px;
+  margin: 2em auto 1em;
+  font-size: 12px;
+  position: relative;
 }
 
 /* .example-2 .button::after {
@@ -238,68 +237,70 @@ a {
 
 /* // Therd example styles ///////////////////////////////////////////////////////////////////////////////*/
 .example-3 .wrapper {
-    background: url("/src/imagens/Pokedex.png") 20% 1% / cover no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/imagens/Pokedex.png");
-    /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/src/imagens/Pokedex.jpg"); */
-  }
-  
-  .example-3 .date {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #0f35df;
-    color: #ffffff;
-    padding: 0.8em;
-  }
-  
-  .example-3 .date span {
-    display: block;
-    text-align: center;
-  }
-  
-  .example-3 .day {
-    font-weight: 700;
-    font-size: 24px;
-  }
-  
-  .example-3.month {
-    text-transform: uppercase;
-  }
-  
-  .example-3 .month,
-  .example-3 .year {
-    font-size: 12px;
-  }
-  
-  .example-3 .content {
-    background-color: #fff;
-    box-shadow: 0 5px 30px 10px rgba(#000, 0.3);
-    /* font-size: 100%; */
-  }
+  background: url("/src/imagens/Pokedex.png") 20% 1% / cover no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/src/imagens/Pokedex.png");
+  /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/src/imagens/Pokedex.jpg"); */
+}
 
-  .example-3 p {
-    color: #000;
-    display: inline-block;
-  }
-  
-  .example-3 .title {
-    color: lighten(#000, 50%);
-  }
-  .example-3 .title a {
-    color: lighten(#000, 50%);
-  }
-  .example-3 .content > a {
-    display: block;
-    width: 100px;
-    margin: 2em auto 1em;
-    font-size: 12px;
-    position: relative;
-  }
-  
+.example-3 .date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0f35df;
+  color: #ffffff;
+  padding: 0.8em;
+}
+
+.example-3 .date span {
+  display: block;
+  text-align: center;
+}
+
+.example-3 .day {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.example-3.month {
+  text-transform: uppercase;
+}
+
+.example-3 .month,
+.example-3 .year {
+  font-size: 12px;
+}
+
+.example-3 .content {
+  background-color: #fff;
+  box-shadow: 0 5px 30px 10px rgba(#000, 0.3);
+  /* font-size: 100%; */
+}
+
+.example-3 p {
+  color: #000;
+  display: inline-block;
+}
+
+.example-3 .title {
+  color: lighten(#000, 50%);
+}
+.example-3 .title a {
+  color: lighten(#000, 50%);
+}
+.example-3 .content > a {
+  display: block;
+  width: 100px;
+  margin: 2em auto 1em;
+  font-size: 12px;
+  position: relative;
+}
+
 /* // Second example styles ///////////////////////////////////////////////////////////////////////////////*/
 .example-4 .wrapper {
   background: url("/src/imagens/MarvelPVP1.jpg") center / cover no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/imagens/MarvelPVP1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/src/imagens/MarvelPVP1.jpg");
 }
 
 .example-4 .wrapper:hover .menu-content span {
@@ -316,21 +317,21 @@ a {
   float: left;
   font-size: 12px;
   color: #fff;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
+} /* ESTUDAR SE VAI FICAR OU NAO*/
 
 .example-4 .menu-content {
   float: right;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
+} /* ESTUDAR SE VAI FICAR OU NAO*/
 
 .example-4 .menu-content li {
   margin: 0 5px;
   position: relative;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
+} /* ESTUDAR SE VAI FICAR OU NAO*/
 
 .example-4 .menu-content span {
   transition: all 0.3s;
   opacity: 0;
-}/* ESTUDAR SE VAI FICAR OU NAO*/
+} /* ESTUDAR SE VAI FICAR OU NAO*/
 
 .example-4 .data {
   color: #fff;
@@ -345,7 +346,7 @@ a {
   color: #fff;
 }
 
-.example-4 .content > a  {
+.example-4 .content > a {
   /* display: block;
   width: 100px;
   margin: 2em auto 1em;
@@ -355,9 +356,9 @@ a {
   line-height: 1;
   position: relative;
   font-weight: 700; */
-    display: block;
-    width: 100px;
-    margin: 2em auto 1em;
-    font-size: 12px;
-    position: relative; 
+  display: block;
+  width: 100px;
+  margin: 2em auto 1em;
+  font-size: 12px;
+  position: relative;
 }

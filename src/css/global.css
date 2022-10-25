@@ -12,11 +12,6 @@ body {
   color: #8a8a8a;
 }
 
-.container {
-  width: 700px;
-  margin: 0 auto;
-}
-
 .pagina {
   margin-top: 6em;
 }
@@ -117,13 +112,6 @@ button:hover {
 .grid-item {
   padding: 20px;
   text-align: left;
-}
-
-.cont-icons {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  grid-template-rows: auto;
 }
 
 .icon {
