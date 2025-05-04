@@ -28,6 +28,7 @@ Portofolio de projetos pessoais criado baixo a instrução e orientação da Tot
 
 - Codigo na web URL: [GitHub](https://github.com/Akherox/portofolio)
 - Site ao vivo URL: [Vercel Pages](https://portofolio-git-main-akherox.vercel.app/)
+- Resume URL: [Portfolio-V2](https://portfolio-v2-w4kb-git-main-akheroxs-projects.vercel.app/)
 
 ## Meu processo
 
